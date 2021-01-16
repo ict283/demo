@@ -3,13 +3,14 @@
 //  Demo
 
 /*
- PASS 1 - Basic Project Setup for ICT283
+ Basic Project Setup for ICT283
  
- Hello!
- Here is a basic C++ main program.
+ Hello! Here is a basic C++ main program.
+ You should know at least this much by now...
+ 
  In ICT283, we include the line 'using namespace std;'
  to make coding easier for new students. This removes
- the need for you to include C++ namespaces in your code.
+ the need for you to deal with namespaces in your code.
  Note: This does not apply to all C++ code.
  
  Eg. Without 'using namespace std;'
