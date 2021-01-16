@@ -3,13 +3,13 @@
 //  Demo
 
 /*
- PASS_1 - Basic Project Setup for ICT283
+ PASS1 - Basic Project Setup for ICT283
  
  Hello!
  Here is a basic C++ main program.
  In ICT283, we include the line 'using namespace std;'
  to make coding easier for new students. This removes
- the need for you to include namespaces in your code.
+ the need for you to include C++ namespaces in your code.
  Note: This does not apply to all C++ code.
  
  Eg. Without 'using namespace std;'
@@ -18,7 +18,11 @@
 
 
 #include <iostream>
-using namespace std;
+using namespace std; //Please note ⬆️
+
+const int MSG_SIZE = 3;
+const string SUCCESS = "Let's write some code!";
+const string ERROR = "Woops! I didn't get your name.";
 
 string get_name();
 void print_message(string name);
@@ -26,10 +30,14 @@ void print_message(string name);
 
 int main(void)
 {
-    //Your code here...
+    
+    
     print_message(get_name());
     return 0;
-}
+    
+    
+} //END MAIN
+
 
 
 string get_name()
@@ -40,14 +48,21 @@ string get_name()
     return name;
 }
 
-void print_message(string name)
+
+void print_message(const string name)
 {
-    string message [4] = {"Hello", name,"!"};
+    string message [MSG_SIZE] = {"Hello",name,"!"};
     
-    for(int i = 0; i< sizeof(message)/sizeof(message[0]); i++)
+    if(name.empty()) //this will never run...
     {
-        cout<<message[i]<<" ";
+       cout<<ERROR<<endl;
     }
-    cout<<endl<<"Let's write some code!"<<endl;
-    
+    else
+    {
+        for(int i = 0; i< sizeof(message)/sizeof(message[0]); i++)
+        {
+            cout<<message[i]<<" ";
+        }
+        cout<<endl<<SUCCESS<<endl;
+    }
 }
