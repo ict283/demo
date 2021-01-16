@@ -3,7 +3,7 @@
 //  Demo
 
 /*
- PASS1 - Basic Project Setup for ICT283
+ PASS 1 - Basic Project Setup for ICT283
  
  Hello!
  Here is a basic C++ main program.
@@ -20,14 +20,16 @@
 #include <iostream>
 using namespace std; //Please note ⬆️
 
+//global variables
 const int MSG_SIZE = 3;
 const string SUCCESS = "Let's write some code!";
 const string ERROR = "Woops! I didn't get your name.";
 
+//function declarations
 string get_name();
 void print_message(string name);
 
-
+//main method block
 int main(void)
 {
     
@@ -39,7 +41,7 @@ int main(void)
 } //END MAIN
 
 
-
+//function implementation
 string get_name()
 {
     string name ="";
@@ -48,7 +50,7 @@ string get_name()
     return name;
 }
 
-
+//function implementation
 void print_message(const string name)
 {
     string message [MSG_SIZE] = {"Hello",name,"!"};
