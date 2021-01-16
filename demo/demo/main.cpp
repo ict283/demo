@@ -5,7 +5,8 @@
 /*
  PASS_1 - Basic Project Setup for ICT283
  
- Here is a basic C++ main program block.
+ Hello!
+ Here is a basic C++ main program.
  In ICT283, we include the line 'using namespace std;'
  to make coding easier for new students. This removes
  the need for you to include namespaces in your code.
