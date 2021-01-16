@@ -11,27 +11,41 @@
  the need for you to include namespaces in your code.
  Note: This does not apply to all C++ code.
  
- Eg.
-     Without 'using namespace std;'
+ Eg. Without 'using namespace std;'
      std::cout<<"Hello World!"<<std::endl
-
- This does not apply to all C++ code however.
  */
+
 
 #include <iostream>
 using namespace std;
 
+string get_name();
+void print_message(string name);
+
 
 int main(void)
 {
-    
-    
-    
     //Your code here...
-    cout<<"Hello World!"<<endl;
-        
-    
-    
-    
+    print_message(get_name());
     return 0;
+}
+
+
+string get_name()
+{
+    string name ="";
+    cout<<"Hi! What's your name?: ";
+    cin>>name;
+    return name;
+}
+
+void print_message(string name)
+{
+    string message [4] = {"Hello", name,"!"};
+    
+    for(int i = 0; i< sizeof(message)/sizeof(message[0]); i++)
+    {
+        cout<<message[i]<<" ";
+    }
+    cout<<endl<<"Let's write some code!"<<endl;
 }
