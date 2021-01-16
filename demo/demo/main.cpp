@@ -66,5 +66,6 @@ void print_message(const string name)
             cout<<message[i]<<" ";
         }
         cout<<endl<<SUCCESS<<endl;
+        
     }
 }
