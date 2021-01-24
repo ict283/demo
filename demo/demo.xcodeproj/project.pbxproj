@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5220DD6825B07DF800BC6142 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220DD6725B07DF800BC6142 /* main.cpp */; };
+		524F3AF725BDAAEA00C275D8 /* Prime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524F3AF525BDAAEA00C275D8 /* Prime.cpp */; };
+		524F3AF925BDB00800C275D8 /* unit_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524F3AF825BDB00800C275D8 /* unit_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		5220DD6425B07DF800BC6142 /* demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo; sourceTree = BUILT_PRODUCTS_DIR; };
-		5220DD6725B07DF800BC6142 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		524F3AF525BDAAEA00C275D8 /* Prime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Prime.cpp; sourceTree = "<group>"; };
+		524F3AF625BDAAEA00C275D8 /* Prime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prime.h; sourceTree = "<group>"; };
+		524F3AF825BDB00800C275D8 /* unit_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unit_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		5220DD6625B07DF800BC6142 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				5220DD6725B07DF800BC6142 /* main.cpp */,
+				524F3AF625BDAAEA00C275D8 /* Prime.h */,
+				524F3AF525BDAAEA00C275D8 /* Prime.cpp */,
+				524F3AF825BDB00800C275D8 /* unit_test.cpp */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5220DD6825B07DF800BC6142 /* main.cpp in Sources */,
+				524F3AF725BDAAEA00C275D8 /* Prime.cpp in Sources */,
+				524F3AF925BDB00800C275D8 /* unit_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
