@@ -26,6 +26,7 @@ int main(void)
     isPrime_test();
     setPrime_test();
     getPrime_test();
+    
 }
 
 void isPrime_test()

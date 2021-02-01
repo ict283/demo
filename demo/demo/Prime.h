@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-const int DEFAULT_PRIME = 2;
+const int DEFAULT_VALUE = 2;
 class Prime
 {
 public:
@@ -20,6 +20,7 @@ public:
     bool isPrime(const int n);
     bool setPrime(const int n);
     int getPrime();
+    
 //private: /* Comment out for unit test */
     int prime_num;
 };

@@ -9,7 +9,7 @@
 #include "Prime.h"
 
 Prime::Prime(){
-    prime_num=DEFAULT_PRIME;
+    prime_num=DEFAULT_VALUE; 
 }
 
 Prime::~Prime(){}
@@ -17,7 +17,7 @@ Prime::~Prime(){}
 bool Prime::isPrime(const int n){
     bool isPrime = true;
     // 0 and 1 are not prime numbers
-    if (n == 0 || n == 1 ){
+    if (n == 0 || n == 1 || n<0){
         isPrime = false;
     }else{
         for (int i = 2; i <= n / 2; ++i){
