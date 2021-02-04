@@ -11,9 +11,11 @@
 
 #include <stdio.h>
 
+ using namespace std;
+
 const int DEFAULT_VALUE = 2;
-class Prime
-{
+class Prime {
+    
 public:
     Prime();
     ~Prime();
@@ -21,7 +23,7 @@ public:
     bool setPrime(const int n);
     int getPrime();
     
-//private: /* Comment out for unit test */
+private: 
     int prime_num;
 };
 #endif /* Prime_h */

@@ -8,15 +8,16 @@
 
 #include "Prime.h"
 
-Prime::Prime(){
+Prime::Prime() {
     prime_num=DEFAULT_VALUE; 
 }
 
-Prime::~Prime(){}
+Prime::~Prime() {}
 
 bool Prime::isPrime(const int n){
     bool isPrime = true;
     // 0 and 1 are not prime numbers
+    // and discard numbers < 0
     if (n == 0 || n == 1 || n<0){
         isPrime = false;
     }else{
@@ -30,7 +31,7 @@ bool Prime::isPrime(const int n){
     return isPrime;
 }
 
-bool Prime::setPrime(const int n){
+bool Prime::setPrime(const int n) {
     
     if(isPrime(n)){
         prime_num=n;
@@ -40,7 +41,7 @@ bool Prime::setPrime(const int n){
         return false;
 }
 
-int Prime::getPrime(){
+int Prime::getPrime() {
     return prime_num;
 }
 
